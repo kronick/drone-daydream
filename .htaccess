@@ -1,0 +1,10 @@
+# Set up flask
+Options +ExecCGI
+AddHandler fcgid-script .fcgi
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !=/home2/slowerin/public_html/drone-daydream/drone-daydream.fcgi
+RewriteRule ^(.*)$ drone-daydream.fcgi/$1 [QSA,L]
+RewriteCond %{HTTP_HOST} ^dronedaydream\.slowerinternet\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.dronedaydream\.slowerinternet\.com$
+RewriteRule ^/?$ "http\:\/\/drone\-daydream\.slowerinternet\.com" [R=301,L]
+

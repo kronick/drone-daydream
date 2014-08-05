@@ -1,0 +1,61 @@
+body {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+#title {
+    text-align: center;
+    color: #cccccc;
+    font-size: 36pt;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.post {
+    margin-bottom: 250px;
+    color: #aaaaaa;
+    width: 800px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.date {
+    margin-top: 1em;
+    font-family: serif;
+    color: #aaaaaa;
+    font-style: italic;
+}
+
+.post a {
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post>img {
+    width: 800px;
+}
+
+.post-actions {
+    margin-top: 10px;
+    text-align: right;
+}
+.post-actions img {
+    width: 25px;
+    vertical-align: bottom;
+    padding-bottom: 1px;
+}
+
+#oldernewer {
+    font-size: 300%;
+    margin-bottom: 2em;
+}
+
+
+.options {
+    font-size: 300%;
+}
