@@ -2,6 +2,7 @@
 <!doctype html>
 <html>
   <head>
+    <title>DRONE DAYDREAM</title>
     <link href='/static/style.css' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css"> 
     <script src="/static/jquery-1.11.1.min.js"></script>
@@ -41,7 +42,21 @@
         {% if request.pagenum > 1 %} &lt;-- <a href="{% if request.admin %}/admin{% endif %}/page/{{ request.pagenum-1 }}">Younger clouds</a> | {% endif %} <a href="{% if request.admin %}/admin{% endif %}/page/{{ request.pagenum+1 }}">Older clouds</a> --&gt;
     </div>-->
 
+<!-- Piwik -->
+<script type="text/javascript">
+var _paq = _paq || [];
+_paq.push(["trackPageView"]);
+_paq.push(["enableLinkTracking"]);
 
+(function() {
+var u=(("https:" == document.location.protocol) ? "https" : "http") + "://slowerinternet.com/analytics/";
+_paq.push(["setTrackerUrl", u+"piwik.php"]);
+_paq.push(["setSiteId", "2"]);
+var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+})();
+</script>
+<!-- End Piwik Code -->
   </body>
 </html>
 {% endif %}
